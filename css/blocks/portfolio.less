@@ -1,0 +1,21 @@
+// main: ../style.less
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem 2.8rem;
+    justify-content: center;
+}
+
+.portfolio__col {
+    max-width: 33.33333%;
+    padding: 1rem;
+    
+    @media @mobile {
+        max-width: 50%;
+    }
+    
+    @media @momile-sm {
+        max-width: 100%;
+    }
+}

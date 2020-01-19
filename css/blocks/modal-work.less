@@ -1,0 +1,160 @@
+// main: ../style.less
+
+.modal-work {
+    display: flex;
+}
+
+.modal-work__preview {
+    width: 65%;
+    position: relative;
+    overflow: hidden;
+    
+    @media @mobile {
+        display: none;
+    }
+}
+
+.modal-work__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.modal-work__content {
+    width: 35%;
+    padding: 3.4rem 2.6rem 1rem 1.73rem;
+    position: relative;
+    
+    @media @notebook {
+        padding-right: 2.6rem;
+    }
+    
+    @media @tablet {
+        padding: 2rem 2.6rem 1rem 1rem;
+    }
+    
+    @media @mobile {
+        width: 100%;
+        padding-top: 5rem;
+    }
+}
+
+.modal-work__header {
+    margin-bottom: 2.2rem;
+}
+
+.modal-work__title {
+    font-size: 2.12rem;
+    color: @black;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: .2rem;
+    
+    @media @tablet {
+        font-size: .94rem;
+    }
+}
+
+.modal-work__info {
+    font-size: 1.2rem;
+    color: @gray;
+    text-transform: uppercase;
+    
+    @media @tablet {
+        font-size: .8rem;
+    }
+}
+
+.modal-work__info-divider {
+    margin: 0 1rem;
+} 
+
+.modal-work__client {
+    margin-bottom: 2.2rem;
+}
+
+.modal-work__client-title {
+    font-size: 1.06rem;
+    color: @black;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    
+    @media @tablet {
+        font-size: .8rem
+    }
+}
+
+.modal-work__client-company {
+    font-size: 0.94rem;
+    font-style: italic;
+    color: @gray;
+    
+    @media @tablet {
+        font-size: .7rem;
+    }
+}
+
+.modal-work__text {
+    font-size: 0.8rem;
+    color: @gray;
+    line-height: 2;
+    font-weight: 300;
+    margin-bottom: 8.66rem;
+    
+    @media @tablet {
+        font-size: .7rem;
+    }
+}
+
+.visit__web {
+    margin-left: 0;
+    text-transform: none;
+    
+    @media @tablet {
+        padding: 0;
+    }
+}
+
+.modal-work__footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0 1.8rem 1rem;
+    
+    @media @notebook {
+        justify-content: space-around;
+    }
+    
+    @media @mobile {
+        display: none;
+    }
+}
+
+.modal-work__btn {
+    font-size: .94rem;
+    color: @black;
+    font-family: inherit;
+    text-transform: uppercase;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    
+    &:focus {
+        outline: none;
+    }
+    
+    @media @notebook {
+        font-size: .8rem;
+    }
+    
+    @media @tablet {
+        font-size: .7rem;
+    }
+}

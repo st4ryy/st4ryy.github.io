@@ -1,0 +1,52 @@
+// main: ../style.less
+
+.progress__bar--item {
+    display: flex;
+    align-items: center;
+    margin-bottom: .3rem;
+}
+
+.progress__bar--title {
+    font-size: .94rem;
+    font-weight: 300;
+    
+    @media @momile-sm {
+        font-size: .7rem;
+    }
+}
+
+.progress__bar--left {
+    min-width: 6rem;
+    
+    @media @momile-sm {
+        min-width: 4rem;
+    }
+}
+
+.progress__bar--right {
+    padding-left: 1.2rem;
+    
+    @media @momile-sm {
+        padding-left: 3px;
+    }
+}
+
+.progress__bar--bar {
+    width: 139px;
+    height: 6px;
+    background-color: #efefef;
+    
+    @media @mobile {
+        width: 80px;
+    }
+    
+    @media @momile-sm {
+        width: 50px;
+    }
+}
+
+.progress__bar--progress {
+    height: 100%;
+    background-color: @gray;
+    transition: width .2s linear;
+}

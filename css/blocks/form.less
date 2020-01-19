@@ -1,0 +1,33 @@
+// main: ../style.less
+
+.form__group {
+    margin-bottom: 1.8rem;
+}
+
+.form__input,
+.form__textarea {
+    display: block;
+    width: 100%;
+    padding: 1.3rem 1.8rem;
+    font-family: inherit;
+    color: @black;
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 1.2;
+    border: 1px solid fade(#707070, 30%);
+    border-radius: 1.8rem;
+    
+    &:focus {
+        outline: none;
+        border-color: #36abc7; 
+    }
+    
+    &::placeholder {
+        color: @black;
+    }
+}
+
+.form__textarea {
+    height: 200px;
+    resize: none;
+}

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156527004-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-156527004-1');
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="canonical" href="http://st4ryy.github.io"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Заказать верстку сайта. Здесь вы можете посмотреть мое портфолио. Опыт работы более года. Работаю быстро и качественно.">
+    <meta property="og:url" content="http://st4ryy.github.io">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Frontend-разработчик">
+    <meta property="og:description" content="Сайт-портфолио. Здесь вы можете посмотреть мои проекты">
+    <meta property="og:image" content="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjYorTOo4vnAhUFyKYKHS6GDbIQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.kobzarev.com%2Fmakeup%2Fcss-text-over-the-line%2F&psig=AOvVaw3l-PeQ8RwiDnzqICjYtsOP&ust=1579372607115891">
+    <meta property="article:author" content="https://vk.com/st4ryy">
+    <meta property="og:site_name" content="Сергей st4ryy Бельтюков">
+    <meta property="article:published_time" content="2019-08-12T00:01:56+00:00">
+    <title>Frontend-разработчик. Создание сайтов. Быстро, качественно.</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    
+<!--    Header     -->
+     <header class="header">
+         <div class="container">
+             <div class="header__inner">
+                 <div class="user">
+                     <div class="user__avatar">
+                         <img class="img" src="images/avatar.png" alt="logo">
+                     </div>
+                     <div class="user__content">
+                         <div class="user__name">Бельтюков <br> Сергей</div>
+                         <div class="user__prof">Frontend-разработчик</div>
+                     </div>
+                 </div>
+                 <nav class="nav" id="nav">
+                     <a class="nav__link" href="#" data-scroll="#works">Работы</a>
+                     <a class="nav__link" href="#" data-scroll="#about__me">Обо мне</a>
+                     <a class="nav__link" href="#" data-scroll="#reviews">Отзывы</a>
+                     <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">Нанять меня</a>
+                 </nav>
+                 <button class="burger" type="button" id="navToggle">
+                    <span class="burger_item">Menu</span>
+                </button>
+             </div>
+         </div> 
+     </header><!--header-->
+     
+<!--     Intro    -->
+     <section class="intro">
+         <div class="container">
+             <div class="intro__inner">
+                 <div class="intro__content">
+                     <h2 class="intro__subtitle">Привет, Я</h2>
+                     <h1 class="intro__title">Бельтюков Сергей</h1>
+                     <div class="intro__text">Frontend-разработчик</div>
+                     <div class="social">
+                         <a class="social__link" href="https://vk.com/st4ryy" target="_blank">
+                         <img class="social__icon" src="images/vk.svg" width="40" height="40" alt="vkontakte">
+                         </a>
+                         <a class="social__link" href="https://www.instagram.com/_st4ryy_/" target="_blank">
+                         <img class="social__icon" src="images/instagram.svg" width="40" height="40" alt="instagram">
+                         </a>
+                         <a class="social__link" href="https://twitter.com/st4ryy" target="_blank">
+                         <img class="social__icon" src="images/twitter.svg" width="40" height="40" alt="twitter">
+                         </a>
+                     </div>
+                     <a class="btn" href="#" data-modal="#modal_hire_me">Нанять меня</a>
+                     <button class="btn" type="button" data-modal="#modal_resume">Мое резюме</button>
+                 </div>
+                 <img class="intro__photo" src="images/photo.png" alt="photo man">
+             </div>
+         </div>
+     </section><!--intro-->
+     
+<!--     Works    -->
+    <div class="works" id="works">
+        <div class="container">
+            <div class="works__nav">
+                <a class="works__nav--link" href="" data-filter="all">Все</a>
+                <a class="works__nav--link" href="" data-filter="app">Приложения</a>
+                <a class="works__nav--link" href="" data-filter="website">Сайты</a>
+            </div>
+            
+            <div class="portfolio" id="portfolio">
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__image" src="images/work1.PNG" width="370" height="300" alt="img work1">
+                        <div class="work__content">
+                            <div class="work__cat">Сайт</div>
+                            <div class="work__title">
+                                Web project
+                                <time class="work__time" datetime="2019-12-20 23:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_2">
+                        <img class="work__image" src="images/work2.PNG" width="370" height="300" alt="img work2">
+                        <div class="work__content">
+                            <div class="work__cat">Сайт</div>
+                            <div class="work__title">
+                                Wapik
+                                <time class="work__time" datetime="2019-12-20 23:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work">
+                        <img class="work__image" src="https://placehold.it/370x300" width="370" height="300" alt="img work3">
+                        <div class="work__content">
+                            <div class="work__cat">Сайт</div>
+                            <div class="work__title">
+                                Название проекта
+                                <time class="work__time" datetime="2019-12-20 23:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work">
+                        <img class="work__image" src="https://placehold.it/370x300" width="370" height="300" alt="img work4">
+                        <div class="work__content">
+                            <div class="work__cat">Сайт</div>
+                            <div class="work__title">
+                                Название проекта
+                                <time class="work__time" datetime="2019-12-20 23:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="app">
+                    <div class="work">
+                        <img class="work__image" src="https://placehold.it/370x300" width="370" height="300" alt="img work5">
+                        <div class="work__content">
+                            <div class="work__cat">Приложение</div>
+                            <div class="work__title">
+                                Название проекта
+                                <time class="work__time" datetime="2019-12-20 23:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="app">
+                    <div class="work">
+                        <img class="work__image" src="https://placehold.it/370x300" width="370" height="300" alt="img work6">
+                        <div class="work__content">
+                            <div class="work__cat">Приложение</div>
+                            <div class="work__title">
+                                Название проекта
+                                <time class="work__time" datetime="2019-12-20 23:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--portfolio-->
+        </div><!--container-->
+    </div>
+     
+<!--     About   -->
+     <section class="about" id="about__me">
+         <div class="container">
+             <div class="about__inner">
+                 <div class="about__photo">
+                     <img class="img" src="images/designer_photo.png" alt="photo selphi">
+                 </div>
+                 <div class="about__content">
+                     <h3 class="about__title">Обо мне</h3>
+                     <h2 class="about__bigtitle">Кто Я</h2>
+                     <div class="about__text">Меня зовут Сергей, мне 22 года. Живу в городе Ижевск. Занимаюсь frontend-разработкой более года. Работаю с photoshop, html5, css3,  препроцессорами less и sass, js, boostrap4, wordpress.</div>
+                     <a class="btn" href="" data-modal="#modal_hire_me">Нанять меня</a>
+                     <button class="btn" type="button" data-modal="#modal_resume">Мое резюме</button>
+                 </div>
+             </div>
+         </div>
+     </section><!--about-->
+     
+<!--     Reviews-->
+     <div class="reviewsSlider">
+         <div class="reviews">
+             <div class="container">
+                 <div class="reviews__item">
+                     <div class="reviews__text">
+                        Спасибо за проделанную работу. Советую этого разработчика, все сделал качественно и в срок. Всегда был на связи и присылал отчет о проделанной работе.Классный frontend-разработчик  
+                     </div>
+                     <div class="reviews__author">
+                         <img class="reviews__photo" src="images/ava_com.jpg" alt="img review">
+                         <div class="reviews__name">Игорь Фоменко</div>
+                         <div class="reviews__company">Company</div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+        <div class="reviews">
+             <div class="container">
+                 <div class="reviews__item">
+                     <div class="reviews__text">
+                        Круто, чувак шарит однозначно! Заказывал ему сайт, для электронных сигарет, сделал всё как я хотел. Быстро и качественно.
+                        Советую всем его. 
+                     </div>
+                     <div class="reviews__author">
+                         <img class="reviews__photo" src="images/dishka.png" alt="photo review2">
+                         <div class="reviews__name">Шмаков Владислав</div>
+                         <div class="reviews__company">Wape-company</div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+     </div><!--reviews-->
+     
+<!--     Footer    -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__credits">
+                    <div class="footer__w3c">
+                            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                                <img style="border:0;width:88px;height:31px"
+                                    src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                                    alt="Правильный CSS!">
+                            </a>
+                    </div>
+                    <div class="footer__social">
+                        <a href="https://vk.com/st4ryy" target="_blank">
+                            <img src="images/vk-gray.svg" width="21" alt="vk">
+                        </a>
+                        <a href="https://www.instagram.com/_st4ryy_/" target="_blank">
+                            <img src="images/instagram-gray.svg" width="18" alt="inst">
+                        </a>
+                        <a href="https://twitter.com/st4ryy" target="_blank">
+                            <img src="images/twitter-gray.svg" width="20" alt="twit">
+                        </a>
+                    </div>
+                </div>
+                <nav class="footer__nav">
+                    <a class="footer__nav--link" href="#" data-scroll="#works">Работы</a>
+                    <a class="footer__nav--link" href="#" data-scroll="#about__me">Обо мне</a>
+                    <a class="footer__nav--link" href="#" data-scroll="#reviews">Отзывы</a>
+                    <a class="footer__nav--link footer__nav--link--btn" href="#" data-modal="#modal_hire_me">Нанять меня</a>
+                </nav>
+            </div>
+        </div>
+    </footer><!--footer-->
+     
+<!--     Modals     -->
+    <div class="modal" id="modal_project_1">
+        <div class="modal__dialog">
+           <button class="modal-close" type="button" data-close>
+               <img class="wind_close" src="images/modal-close.svg" width="40" alt="close">
+           </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                       <div>
+                            <img class="modal-work__photo" src="images/work1screen1.png" width="800" height="600" alt="workscreen1">
+                       </div>
+                       <div>
+                            <img class="modal-work__photo" src="images/work1screen2.png" height="600" alt="workscreen2">
+                       </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                   <div class="modal-work__header">
+                     <h3 class="modal-work__title">Верстка</h3>
+                     <div class="modal-work__info">
+                         wape-company <span class="modal-work__info-divider">|</span> 2019
+                     </div>
+                   </div>
+                   <div class="modal-work__client">
+                       <div class="modal-work__client-title">Заказчик:</div>
+                       <div class="modal-work__client-company">Шмаков Владислав</div> 
+                   </div>
+                   <div class="modal-work__text">
+                       <p>Адаптивная и кроссбраузерная верстка с использованием less-пропрецессора, js-jquery. Данный проект сделан из PSD шаблона в целях тренировки и улучшения навыков верстки. Сайт полностью адаптирован под любое устройство и работает в любом браузере. Ниже вы можете перейти на данный сайт и убедится в этом сами.</p>
+                       <a class="nav__link visit__web" href="http://st4ryyy.000webhostapp.com/">Перейти на сайт</a>
+                   </div>
+                   <div class="modal-work__footer">
+                       <button class="modal-work__btn slickPrev" type="button">
+                         <img src="images/back.svg" height="11" alt="back">
+                         Предыдущий
+                       </button>
+                       <button class="modal-work__btn slickNext" type="button">
+                         Следующий
+                         <img src="images/next.svg" height="11" alt="next">
+                       </button>
+                   </div>
+                </div>
+            </div><!--modal-work-->
+        </div><!--modal__dialog-->
+    </div><!--modal-->
+     
+      <div class="modal" id="modal_project_2">
+        <div class="modal__dialog">
+           <button class="modal-close" type="button" data-close>
+               <img class="wind_close" src="images/modal-close.svg" width="40" alt="close">
+           </button>
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                       <div>
+                            <img class="modal-work__photo" src="images/work2screen1.png" height="600" alt="work2screen1">
+                       </div>
+                       <div>
+                            <img class="modal-work__photo" src="images/work2screen2.png" height="600" alt="work2screen2">
+                       </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                   <div class="modal-work__header">
+                     <h3 class="modal-work__title">Верстка</h3>
+                     <div class="modal-work__info">
+                         Company <span class="modal-work__info-divider">|</span> 2019
+                     </div>
+                   </div>
+                   <div class="modal-work__client">
+                       <div class="modal-work__client-title">Заказчик:</div>
+                       <div class="modal-work__client-company">Шмаков Владислав</div> 
+                   </div>
+                   <div class="modal-work__text">
+                       <p>Адаптивная и кроссбраузерная верстка с использованием js-jquery. Данный проект сделан из PSD шаблона в целях тренировки и улучшения навыков верстки. Сайт полностью адаптирован под любое устройство и работает в любом браузере. Чтобы убедится в этом, перейдите ниже по ссылки.</p>
+                       <a class="nav__link visit__web" href="http://st4ryy.000webhostapp.com">Перейти на сайт</a>
+                   </div>
+                   <div class="modal-work__footer">
+                       <button class="modal-work__btn slickPrev" type="button">
+                         <img src="images/back.svg" height="11" alt="back">
+                         Предыдущий
+                       </button>
+                       <button class="modal-work__btn slickNext" type="button">
+                         Следующий
+                         <img src="images/next.svg" height="11" alt="next">
+                       </button>
+                   </div>
+                </div>
+            </div><!--modal-work-->
+        </div><!--modal__dialog-->
+    </div><!--modal-->
+     
+     <div class="modal" id="modal_resume">
+        <div class="modal__dialog">
+           <button class="modal-close" type="button" data-close>
+               <img class="wind_close" src="images/modal-close.svg" width="40" alt="close">
+           </button>
+           <div class="modal__content">
+              <h3 class="modal__title text__centr">Резюме</h3>
+              <div class="text__centr">
+                  <a class="btn btn--thin" href="resume.pdf" download="Резюме">Скачать PDF</a>
+                  <a class="btn btn--thin" href="resume.pdf">Открыть PDF</a>
+              </div>
+              <div class="timeline">
+                  <div class="timeline__col timeline__col--left">
+                      <h4 class="timeline__title">Опыт</h4>
+                      <div class="timline__item">
+                          <time class="timeline__date" datetime="2019-12-10">2019 - <b>Present</b></time>
+                          <h5 class="timeline__subtitle">Freelancer</h5>
+                          <div class="timeline__position">Frontend-Разработчик</div>
+                          <div class="timeline__text">
+                              <p>Разработка сайтов. Адаптивная и кроссбраузерная верстка.</p>
+                          </div>  
+                      </div>
+                  </div>
+                  <div class="timeline__col timeline__col--right">
+                      <h4 class="timeline__title">Навыки</h4>
+                      <div class="progress__bar">
+                         <div class="progress__bar--item">
+                              <div class="progress__bar--left">
+                                  <div class="progress__bar--title">Photoshop</div>
+                              </div>
+                              <div class="progress__bar--right">
+                                  <div class="progress__bar--bar">
+                                      <div class="progress__bar--progress" style="width: 80%"></div>
+                                  </div>
+                              </div>
+                         </div>
+                      </div>
+                      <div class="progress__bar">
+                         <div class="progress__bar--item">
+                              <div class="progress__bar--left">
+                                  <div class="progress__bar--title">HTML5</div>
+                              </div>
+                              <div class="progress__bar--right">
+                                  <div class="progress__bar--bar">
+                                      <div class="progress__bar--progress" style="width: 100%"></div>
+                                  </div>
+                              </div>
+                         </div>
+                      </div>
+                      <div class="progress__bar">
+                         <div class="progress__bar--item">
+                              <div class="progress__bar--left">
+                                  <div class="progress__bar--title">CSS3</div>
+                              </div>
+                              <div class="progress__bar--right">
+                                  <div class="progress__bar--bar">
+                                      <div class="progress__bar--progress" style="width: 100%"></div>
+                                  </div>
+                              </div>
+                         </div>
+                      </div>
+                      <div class="progress__bar">
+                         <div class="progress__bar--item">
+                              <div class="progress__bar--left">
+                                  <div class="progress__bar--title">JS</div>
+                              </div>
+                              <div class="progress__bar--right">
+                                  <div class="progress__bar--bar">
+                                      <div class="progress__bar--progress" style="width: 60%"></div>
+                                  </div>
+                              </div>
+                         </div>
+                      </div>
+                  </div>
+              </div><!--timline-->
+              <div class="text__centr">
+                  <a class="btn btn--thin" href="" data-modal="#modal_hire_me">Нанять меня</a>
+              </div>
+           </div>
+        </div><!--modal__dialog-->
+    </div><!--modal-->
+      <div class="modal" id="modal_hire_me">
+        <div class="modal__dialog modal__dialog--sm">
+           <button class="modal-close" type="button" data-close>
+               <img class="wind_close" src="images/modal-close.svg" width="40" alt="close">
+           </button>
+           <div class="contact">
+              <div class="contact__left">
+                  <h3 class="modal__title mb-0">Поговорим?</h3>
+                  <div class="modal__subtitle">Напишите мне на почту</div>
+                   <ul class="contact__info">
+                       <li class="contact__info--item">
+                          <img  class="contact__info--icon" src="images/mail.svg" alt="mail">
+                           vangabelka@gmail.com
+                       </li>
+                   </ul>
+                   <form class="form" action="/" method="post">
+                      <div class="form__group">
+                        <input class="form__input" name="input-email" type="text" id="input-email" placeholder="e-mail">
+                      </div>
+                      <div class="form__group">
+                        <textarea class="form__textarea" name="input-text" id="input-text" placeholder="Введите ваше предложение..."></textarea>
+                      </div>
+                      <div class="text__right">
+                        <button class="btn" type="submit">Отправить</button>
+                      </div>
+                   </form>
+              </div>
+           </div>
+        </div>
+     </div> <!--modal-->
+      .
+<!--      JS     -->
+     <script src="js/slick.min.js"></script>
+     <script src="js/app.js"></script>
+      
+     
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

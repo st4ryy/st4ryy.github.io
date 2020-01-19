@@ -1,0 +1,33 @@
+// main: ../style.less
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact__left {
+    width: 50%;
+    padding: 2rem;
+    
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+.contact__info {
+    margin: 2rem 0 3rem;
+    padding: 0;
+    list-style: none;
+    font-size: 0.94rem;
+    color: @black;
+    font-weight: 300;
+}
+
+.contact__info--item {
+    display: flex;
+    align-items: center;
+}
+
+.contact__info--icon {
+    margin-right: .5rem;
+}

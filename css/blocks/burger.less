@@ -1,0 +1,44 @@
+// main: ../style.less
+
+.burger {
+    display: none;
+    padding: 9px 2px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    
+    @media @tablet {
+        display: block;
+    }
+}
+
+.burger_item {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    font-size: 0;
+    color: transparent;
+    position: relative;
+    
+}
+
+.burger_item:before,
+.burger_item:after {
+    content: "";
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.burger_item:before {
+    top: -8px;
+    width: 27px;
+}
+
+.burger_item:after {
+    bottom: -8px;
+    width: 22px;
+}
